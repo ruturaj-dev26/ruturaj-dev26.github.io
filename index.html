@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #3498db;
+        }
+
+        .download-resume {
+            position: absolute;
+            right: 1em;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0.5em 1em;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .download-resume:hover {
+            background-color: #2980b9;
+        }
+
+        section {
+            padding: 4em 1em;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background-color: #ecf0f1;
+        }
+
+        .work-experience {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .work-experience-item {
+            display: flex;
+            align-items: center;
+            width: calc(50% - 1em); /* Adjust as needed */
+            padding: 1em;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 1em; /* Add spacing between items */
+        }
+
+        .company-logo {
+            width: 50px; /* Adjust size as needed */
+            margin-right: 1em; /* Space between logo and text */
+            border-radius: 8px; /* Optional: Rounded corners */
+        }
+
+        .work-experience-item h3 {
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        .work-experience-item p {
+            margin: 0.5em 0;
+            color: #7f8c8d;
+        }
+
+        .work-experience-item .position {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #34495e;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .work-experience-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a class="download-resume" href="resume.pdf" download="My_Resume.pdf">Download Resume</a>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is a brief introduction about me and my work.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is where you can add information about yourself, your background, and your skills.</p>
+    </section>
+    
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="work-experience">
+            <div class="work-experience-item">
+                <img class="company-logo" src="3ds.png" alt="Company 1 Logo">
+                <div>
+                    <h3>Company ABC</h3>
+                    <p class="position">Senior Developer</p>
+                    <p>January 2020 - Present</p>
+                    <p>Responsible for leading a team of developers to build innovative web applications.</p>
+                </div>
+            </div>
+            <div class="work-experience-item">
+                <img class="company-logo" src="Cognizant.jpeg" alt="Company 2 Logo">
+                <div>
+                    <h3>Company XYZ</h3>
+                    <p class="position">Frontend Developer</p>
+                    <p>June 2017 - December 2019</p>
+                    <p>Developed user-friendly web interfaces and worked closely with designers and backend developers.</p>
+                </div>
+            </div>
+            <!-- Add more work experience items as needed -->
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at:</p>
+        <ul>
+            <li>Email: your-email@example.com</li>
+            <li>Phone: +1234567890</li>
+            <li>LinkedIn: <a href="https://linkedin.com/your-profile">Your LinkedIn Profile</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
